@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 JUEGOS SEGURA - Retro Arcade 🎮</title>
+    <link rel="stylesheet" href="retro-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Scanlines effect -->
+    <div class="scanlines"></div>
+    
+    <!-- Audio element for 8-bit music -->
+    <audio id="bgMusic" loop>
+        <!-- We'll generate 8-bit music using Web Audio API in JavaScript -->
+    </audio>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="title">
+                <span class="title-icon">🎮</span>
+                JUEGOS SEGURA
+                <span class="title-icon">🎮</span>
+            </h1>
+            <button id="audioToggle" class="audio-btn">
+                <span id="audioIcon">🔊</span>
+            </button>
+        </header>
+
+        <!-- Main game area -->
+        <main class="game-area">
+            <div class="game-frame">
+                <div class="frame-glow"></div>
+                <iframe 
+                    src="https://www.retrogames.cc/embed/10030-street-fighter-ii-champion-edition-street-fighter-2-920513-etc.html" 
+                    width="100%" 
+                    height="600" 
+                    frameborder="0" 
+                    allowfullscreen="true" 
+                    webkitallowfullscreen="true" 
+                    mozallowfullscreen="true" 
+                    scrolling="no"
+                    title="Street Fighter II - Champion Edition"
+                    style="min-height: 500px;">
+                </iframe>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <span class="footer-icon">🕹️</span>
+                RETRO GAMING ZONE
+                <span class="footer-icon">🕹️</span>
+            </div>
+            <div class="footer-subtitle">
+                Press START to begin your adventure
+            </div>
+        </footer>
+    </div>
+
+    <!-- Particle effects -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <script src="retro-script.js"></script>
+</body>
+</html>
